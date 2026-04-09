@@ -1,56 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <title>Vanfabrik Tools</title>
 
 <style>
+
 body {
     font-family: Arial, sans-serif;
     margin: 40px;
+    background-color: #f7f7f7;
 }
 
 h1 {
     margin-bottom: 30px;
 }
 
-a {
+.container {
+    max-width: 600px;
+}
+
+.tool {
     display: block;
-    padding: 14px;
-    margin: 10px 0;
-    background: #f3f3f3;
-    border-radius: 6px;
+    padding: 16px;
+    margin: 12px 0;
+    background: white;
+    border-radius: 8px;
     text-decoration: none;
     color: black;
     font-size: 18px;
+    border: 1px solid #ddd;
+    transition: 0.2s;
 }
 
-a:hover {
-    background: #e5e5e5;
+.tool:hover {
+    background: #f0f0f0;
+    transform: translateY(-1px);
 }
+
+.version {
+    margin-top: 40px;
+    color: #777;
+    font-size: 14px;
+}
+
 </style>
 
 </head>
+
 <body>
+
+<div class="container">
 
 <h1>Vanfabrik – Tools</h1>
 
-
-    <a href="/teilausbautool/">
+<a class="tool" href="https://vf-tools.github.io/teilausbautool/">
 🔧 Teilausbau Tool
 </a>
 
-<a href="/kabelrechner/">
+<a class="tool" href="https://vf-tools.github.io/kabelrechner/">
 ⚡ Kabelrechner
 </a>
 
-<a href="/konfigurator/">
+<a class="tool" href="https://vf-tools.github.io/konfigurator/">
 🧰 Konfigurator
 </a>
 
-<a href="/vflager/">
+<a class="tool" href="https://vf-tools.github.io/vflager/">
 📦 Lagerliste
 </a>
+
+<div class="version">
+Stand: April 2026
+</div>
+
+</div>
 
 </body>
 </html>
